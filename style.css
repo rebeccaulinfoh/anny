@@ -1,0 +1,214 @@
+Sure 😊 Here is the full style.css with the purple changed to blue. You can replace your old CSS with this one.
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f9ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0066cc;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+.navbar a:focus {
+    outline: 3px solid #ffd700;
+    outline-offset: 4px;
+}
+
+/* Banner */
+.banner {
+    background-color: #0088ff;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    min-width: 300px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.container > h2 {
+    text-align: center;
+    color: #0066cc;
+    margin-bottom: 30px;
+}
+
+/* Product Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #0066cc;
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #555;
+}
+
+.card .price {
+    color: #0088ff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    background-color: #0088ff;
+}
+
+.card a:focus {
+    outline: 3px solid #ffd700;
+    outline-offset: 3px;
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.social-links h2 {
+    color: #0066cc;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 8px;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #0088ff;
+    text-decoration: underline;
+}
+
+.social-links a:focus {
+    outline: 3px solid #ffd700;
+    outline-offset: 3px;
+}
+
+/* Footer */
+footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+}
